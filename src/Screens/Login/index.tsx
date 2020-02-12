@@ -27,3 +27,64 @@ const Logo = Styled.Text`
     margin-bottom: 40px;
 `;
 
+const PasswordReset = Styled.Text`
+    width: 100%;
+    color: #3796EF;
+    text-align: right;
+    margin-bottom: 24px;
+`;
+
+const SignupText = Styled.Text`
+    color: #929292;
+    text-align: center;
+`;
+
+const SignupLink = Styled.Text`
+    color: #3796EF;
+`;
+
+const Footer = Styled.View`
+    width: 100%;
+    border-top-width: 1px;
+    border-color: #D3D3D3;
+    padding: 8px;
+`;
+
+const Copyright = Styled.Text`
+    color:#929292;
+    text-align: center;
+`;
+
+interface Props {
+    navigation: NavigationScreenProp<NavigationState>;
+};
+
+const Login = ({ navigation }: Props) => {
+    return(
+        <Container>
+            <FormContainer>
+                <Logo>SNS App</Logo>
+                <Input style={{ marginBottom: 16}} placeholder="이메일" />
+                <Input style={{ marginBottom: 16 }} placeholder="비밀번호" secureTextEntry={true} />
+                <PasswordReset onPress={() => navigation.navigate('PasswordReset')}>비밀번호 재설정</PasswordReset>
+                <Button label="로그인" style= {{ marginBottom: 24 }} onPress={() =>{ AsyncStorage.setItem('key', 'JWT_KEY'); navigation.navigate('MainNavigator')}}/>
+                <SignupText>
+                    계정이 없는가요?{' '}
+                    <SignupLink onPress={() => navigation.navigate('Signup')}>
+                        가입하기.
+                    </SignupLink>
+                </SignupText>
+            </FormContainer>
+            <Footer>
+                <Copyright>SNSApp from dev-onlyhisson</Copyright>
+            </Footer>
+        </Container>
+    );
+};
+
+Login.navigationOptions = {
+    header: null,
+};
+
+export default Login;
+
