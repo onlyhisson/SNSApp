@@ -48,3 +48,5 @@ const Input = ({ placeholder, keyboardType, secureTextEntry, style, clearMode, o
         </Container>
     )
 }
+
+export default Input;
