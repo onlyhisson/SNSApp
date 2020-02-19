@@ -12,7 +12,8 @@ const Story = Styled.View`
     width: 56px;
     height: 56px;
     border-radius: 56px;
-    oberflow: hidden;
+    ov
+    erflow: hidden;
     align-items: center;
     justify-content: conter;
 `;
