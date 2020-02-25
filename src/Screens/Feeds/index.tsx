@@ -4,10 +4,9 @@ import { NavigationScreenProp, NavigationState } from 'react-navigation';
 import Styled from 'styled-components/native';
 
 import { RandomUserDataContext } from '~/Context/RandomUserData';
-import IconButton from '~/Components/IconButton/index';
+import IconButton from '~/Components/IconButton';
 import Input from '~/Components/Input';
 import ImageFeedList from '~/Components/ImageFeedList';
-import IconButton from './../../Components/IconButton/index';
 
 const SearchBar = Styled.View`
     flex: 1;
@@ -58,3 +57,5 @@ Feeds.navigationOptions = {
     ),
     headerBackTitle: null,  // iOS에서 뒤로 가기 버튼에 사용되는 제목 문자열. Defaults to the previous scene's headerTitle.
 };
+
+export default Feeds;
