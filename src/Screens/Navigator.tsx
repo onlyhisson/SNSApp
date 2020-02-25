@@ -37,7 +37,6 @@ const FeedsTab = createStackNavigator({
     FeedListOnly,
 });
 
-
 const UploadTab = createStackNavigator({
     Upload,
 });
@@ -155,6 +154,7 @@ const MainNavigator = createDrawerNavigator(    // 드로어 내비게이션
     {
         drawerPosition: 'right',    // 드로어 방향
         drawerType: 'slide',        // 화면 위가 아닌 화면 전체를 이동시키면서 표시
+        contentComponent: Drawer    // custom Drawer 적용
     }
 );
 
