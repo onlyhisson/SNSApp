@@ -60,6 +60,7 @@ interface Props {
 };
 
 const Login = ({ navigation }: Props) => {
+    console.log('Login function');
     return(
         <Container>
             <FormContainer>

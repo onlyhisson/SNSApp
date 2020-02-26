@@ -12,10 +12,9 @@ const Story = Styled.View`
     width: 56px;
     height: 56px;
     border-radius: 56px;
-    ov
-    erflow: hidden;
+    overflow: hidden;
     align-items: center;
-    justify-content: conter;
+    justify-content: center;
 `;
 
 const StoryBackground = Styled.Image`
@@ -25,7 +24,7 @@ const StoryBackground = Styled.Image`
 const StoryImage = Styled.Image`
     width: 50px;
     height: 50px;
-    border-align: center;
+    border-radius: 50px;
 `;
 
 const StoryName = Styled.Text`

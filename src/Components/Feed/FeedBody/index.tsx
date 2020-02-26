@@ -24,7 +24,7 @@ const FeedImageIndicatorContainer = Styled.View`
     flex: 1;
     flex-direction: row;
     justify-content: center;
-    align-itemes: center;
+    align-items: center;
 `;
 
 const FeedImageIndicator = Styled.View`
