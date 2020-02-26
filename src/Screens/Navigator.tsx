@@ -70,8 +70,8 @@ const MainTabs = createBottomTabNavigator({ // 메인 내비게이션
                 <Image 
                     source={
                         focused 
-                            ? require('~/Assets/Images/Tabs/ic_add.png')
-                            : require('~/Assets/Images/Tabs/ic_add_outline.png')
+                            ? require('~/Assets/Images/Tabs/ic_search.png')
+                            : require('~/Assets/Images/Tabs/ic_search.png')
                     }
                 />
             ),

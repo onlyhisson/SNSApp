@@ -4,7 +4,7 @@ import Styled from 'styled-components/native';
 import Button from '~/Components/Button';
 
 const Container = Styled.View`  
-    flex-direcation: row;
+    flex-direction: row;
 `;
 
 const ProfileImageContainer = Styled.View`

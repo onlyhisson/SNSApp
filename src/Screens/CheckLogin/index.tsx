@@ -16,10 +16,12 @@ interface Props {
 }
 
 const CheckLogin = ({ navigation }: Props) => {
+    console.log('CheckLogin');
+
     AsyncStorage.getItem('key') // 인증키 여부 확인
         .then(value => {
             if(value) {
-                navigation.navigate('MainTabNavigator');
+                navigation.navigate('MainNavigator');
             } else {
                 navigation.navigate('LoginNavigator');
             }
