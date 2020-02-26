@@ -49,7 +49,7 @@ const StoryList = ({ storyList }: Props) => {
             renderItem={({ item, index}) => (
                 <StoryContainer>
                     <Story>
-                        <StoryBackground source={require('~/Asstes/Images/story_background.png')}/> 
+                        <StoryBackground source={require('~/Assets/Images/story_background.png')}/> 
                         <StoryImage source={{ uri: item.photo}} style={{ width: 52, height: 52}} />
                     </Story>
                     <StoryName numberOfLines={1}>{item.name}</StoryName>
