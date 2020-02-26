@@ -78,7 +78,7 @@ const PasswordReset = ({ navigation }: Props) => {
         <Container>
             <FormContainer>
                 <LockImageContainer>
-                    <LockImage source={require('~/Asstes/Images/lock.png')} />
+                    <LockImage source={require('~/Assets/Images/lock.png')} />
                 </LockImageContainer>
                 <Title>로그인에 문제가 있나요?</Title>
                 <Description>{tabDescriptions[tabIndex]}</Description>
