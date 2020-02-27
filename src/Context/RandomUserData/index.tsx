@@ -74,9 +74,7 @@ const RandomUserDataProvider = ({ cache, children }: Props) => {
     // 모바일 내부에 이미지에 대한 내용 데이터 조회 후 useState 에 저장
     const setDescriptions = async () => {
         const cachedData = await getCacheData('DescriptionList'); // 모바일 내부에 이미지에 대한 내용 데이터 조회
-        console.log('cachedData ****************************************');
-        console.log(cachedData.length);
-        console.log('cachedData *****************************************');
+        
         if (cachedData) {
             setDescriptionList(cachedData); // useState 에 저장
             return;
